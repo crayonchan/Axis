@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "50b3c975-d162-4783-ae26-aa010d5f9636": {
+      "ProjectGuid": "50b3c975-d162-4783-ae26-aa010d5f9636",
+      "DisplayName": "Axis",
+      "ColorIndex": 0
+    },
+    "7214446f-fb72-4746-b801-45965a8cf5e0": {
+      "ProjectGuid": "7214446f-fb72-4746-b801-45965a8cf5e0",
+      "DisplayName": "Axis.Test",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
