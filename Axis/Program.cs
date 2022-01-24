@@ -10,9 +10,9 @@ namespace Axis
         {
             var sorter = new NameSorter();
             var names = sorter.ReadNamesFromCsv("Data\\names.csv");
-            names = sorter.SortNames(names);
+            var sortedNames = sorter.SortNames(names);
 
-            names.ToList().ForEach(name =>
+            sortedNames.ToList().ForEach(name =>
             {
                 Console.WriteLine($"{name.FirstName} {name.LastName}");
             });            

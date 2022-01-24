@@ -12,8 +12,13 @@ namespace Axis
 {
     public class NameSorter : INameSorter
     {
+        /// <summary>
+        /// Reads a CSV file for a list of names, and returns the list.
+        /// </summary>
         public IList<Name> ReadNamesFromCsv(string filePath)
         {
+            // Validation here isn't exhaustive, but I've put it in to be able to test for exceptions 
+            // and also to show different tests for full coverage.
             if (!File.Exists(filePath))
             {
                 throw new ArgumentException("Input file doesn't exist.");
@@ -34,6 +39,9 @@ namespace Axis
             return names;
         }
 
+        /// <summary>
+        /// Takes a list of names, and returns it sorted by name.
+        /// </summary>
         public IList<Name> SortNames(IList<Name> names)
         {
             return names.OrderBy(n => n.FirstName).ToList();
